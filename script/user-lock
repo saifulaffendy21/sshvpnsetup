@@ -1,0 +1,25 @@
+#!/bin/bash
+# Created by knightvps
+# Lock User.
+red='\e[1;31m'
+green='\e[0;32m'
+blue='\e[1;34m'
+NC='\e[0m'
+echo "Connecting to knightvps.info..."
+sleep 0.2
+
+read -p "Masukkan Username Yang Ingin Anda Kunci: " username
+egrep "^$username" /etc/passwd >/dev/null
+if [ $? -eq 0 ]; then
+# proses mengganti passwordnya
+passwd -l $username
+clear
+  echo " "
+  echo "-----------------------------------------------"
+  echo -e "Username ${blue}$username${NC} Sudah berhasil di ${red}KUNCI${NC}."
+  echo -e "Akses Login Untuk Username ${blue}$username${NC} Sudah DiKunci"
+  echo "-----------------------------------------------"
+else
+echo "Username Tidak Ditemui Di Server Anda"
+    exit 1
+fi
