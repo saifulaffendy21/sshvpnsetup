@@ -1,5 +1,5 @@
 #!/bin/bash
-myip=`curl ifconfig.me`;
+myip=`wget -qO- ifconfig.co`;
 #myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
 #myint=`ifconfig | grep -B1 "inet addr:$myip" | head -n1 | awk '{print $1}'`;
 flag=0
@@ -19,8 +19,6 @@ chmod +x mysql.sh
 clear
 
 wget https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/mysql_secure.sh
-
-https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/
 chmod +x mysql_secure.sh
 ./mysql_secure.sh
 clear
