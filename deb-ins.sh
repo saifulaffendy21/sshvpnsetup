@@ -104,7 +104,7 @@ echo; echo -n 'Creating cron to run script every minute.....(Default setting)'
 echo '.....done'
 echo; echo 'Installation has completed.'
 echo 'Config file is at /usr/local/ddos/ddos.conf'
-echo 'Please send in your comments and/or suggestions to Lee Dzung Autoscript'
+echo 'Please send in your comments and/or suggestions to *** ***** (pancake-23092018) Autoscript'
 apt-get -y install squid3
 
 wget -O /etc/squid3/squid.conf https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/squid.conf
@@ -148,6 +148,9 @@ chmod +x webmin.sh
 wget https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/pptp.sh
 chmod +x pptp.sh
 ./pptp.sh
+
+#adding menu with wget 23-09-2018
+wget -O /usr/bin/menu https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/menu.sh
 
 wget -O /usr/bin/user-add https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/user-add.sh
 
@@ -200,6 +203,7 @@ wget -O /usr/bin/autokill https://raw.githubusercontent.com/asyraaf92/sshvpnsetu
 wget -O /usr/bin/user-data https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/user-data.sh
 
 clear
+chmod +x /usr/bin/menu
 chmod +x /usr/bin/user-add
 chmod +x /usr/bin/user-renew
 chmod +x /usr/bin/user-pass
