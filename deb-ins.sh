@@ -41,7 +41,7 @@ clear
 apt-get -y install zip unzip
 cd /home/vps/public_html
 
-wget https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/LeepanelV1.zip
+wget https://raw.githubusercontent.com/saifulaffendy21/sshvpnsetup/dev/config/LeepanelV1.zip
 unzip LeepanelV1.zip
 rm -f LeepanelV1.zip
 clear
@@ -67,8 +67,8 @@ sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
 sed -i 's/#net.ipv6.conf.all.forwarding=1/net.ipv6.conf.all.forwarding=1/g' /etc/sysctl.conf
 sysctl -p
 clear
-wget https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/dotdeb.gpg
-wget https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/jcameron-key.asc
+wget https://raw.githubusercontent.com/saifulaffendy21/sshvpnsetup/dev/script/dotdeb.gpg
+wget https://raw.githubusercontent.com/saifulaffendy21/sshvpnsetup/dev/script/jcameron-key.asc
 cat dotdeb.gpg | apt-key add -;rm dotdeb.gpg
 cat jcameron-key.asc | apt-key add -;rm jcameron-key.asc
 apt-get -y --purge remove samba*;
@@ -107,19 +107,19 @@ echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to *** ***** (pancake-23092018) Autoscript'
 apt-get -y install squid3
 
-wget -O /etc/squid3/squid.conf https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/squid.conf
+wget -O /etc/squid3/squid.conf https://raw.githubusercontent.com/saifulaffendy21/sshvpnsetup/dev/script/squid.conf
 sed -i "s/ipserver/$myip/g" /etc/squid3/squid.conf
 apt-get -y install openvpn
 cd /etc/openvpn/
 
 wget https://github.com/asyraaf92/sshvpnsetup/raw/dev/zip/openvpn.tar;tar xf openvpn.tar;rm openvpn.tar
 
-wget -O /etc/iptables.up.rules https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/iptables.up.rules
+wget -O /etc/iptables.up.rules https://raw.githubusercontent.com/saifulaffendy21/sshvpnsetup/dev/script/iptables.up.rules
 sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.local
 sed -i "s/ipserver/$myip/g" /etc/iptables.up.rules
 iptables-restore < /etc/iptables.up.rules
 
-wget -O /home/vps/public_html/client.ovpn https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/client.ovpn
+wget -O /home/vps/public_html/client.ovpn https://raw.githubusercontent.com/saifulaffendy21/sshvpnsetup/dev/script/client.ovpn
 sed -i "s/ipserver/$myip/g" /home/vps/public_html/client.ovpn;cd
 
 wget https://github.com/asyraaf92/sshvpnsetup/raw/dev/zip/cronjob.tar
