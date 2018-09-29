@@ -29,10 +29,10 @@ chmod -R 755 /var/lib/mysql/
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 
-wget -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/nginx.conf
+wget -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/saifulaffendy21/sshvpnsetup/dev/script/nginx.conf
 echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
 
-wget -O /etc/nginx/conf.d/vps.conf https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/vps.conf
+wget -O /etc/nginx/conf.d/vps.conf https://raw.githubusercontent.com/saifulaffendy21/sshvpnsetup/dev/script/vps.conf
 sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
 echo "<?php phpinfo() ?>" > /home/vps/public_html/info.php
 service php5-fpm restart
