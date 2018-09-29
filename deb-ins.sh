@@ -174,7 +174,7 @@ wget -O /usr/bin/user-login https://raw.githubusercontent.com/asyraaf92/sshvpnse
 
 wget -O /usr/bin/user-limit https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/user-limit.sh
 
-wget -O /usr/bin/ps-mem https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/ps_mem.py
+wget -O /usr/bin/ps-mem https://raw.githubusercontent.com/saifulaffendy21/sshvpnsetup/dev/script/ps_mem.py
 
 wget -O /usr/bin/speedtest https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/speedtest_cli.py
 
