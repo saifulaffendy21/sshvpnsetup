@@ -141,7 +141,7 @@ service dropbear restart
 apt-get -y install fail2ban;
 service fail2ban restart
 
-wget https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/webmin.sh
+wget https://raw.githubusercontent.com/saifulaffendy21/sshvpnsetup/dev/script/webmin.sh
 chmod +x webmin.sh
 ./webmin.sh
 
