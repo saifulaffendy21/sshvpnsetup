@@ -2,7 +2,7 @@
 
 # install webmin
 cd
-wget --content-disposition -c https://sourceforge.net/projects/webadmin/files/webmin/1.860/webmin_1.860_all.deb/download
+wget --content-disposition -c https://sourceforge.net/projects/webadmin/files/webmin/1.860/webmin_1.860_all.deb
 dpkg --install webmin_1.860_all.deb;
 apt-get -y -f install;
 rm /root/webmin_1.860_all.deb
