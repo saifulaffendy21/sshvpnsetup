@@ -37,7 +37,7 @@ do
 	echo -e "\e[0;33mTotal amount of swap  : \e[32m $swap MB"
 	echo -e "\e[0;33mSystem uptime         :\e[32m$up"
 	echo -e "\e[0;33mScript updated date   :\e[35m  10-04-2017"
-    echo -e "\e[0;33mPower menu by         :\e[35m  Zax"
+    echo -e "\e[0;33mPower menu by         :\e[35m  saifulaffendy"
     echo -e "\e[0;33mMenu version          :\e[35m  2.1.1"
     echo -e "\e[0;33mOriginal Autoscript   :\e[35m  http://localhost"
     echo ""
