@@ -150,7 +150,7 @@ chmod +x pptp.sh
 ./pptp.sh
 
 #adding menu with wget 23-09-2018
-wget -O /usr/bin/menu https://raw.githubusercontent.com/asyraaf92/sshvpnsetup/dev/script/menu.sh
+wget -O /usr/bin/menu https://raw.githubusercontent.com/saifulaffendy21/sshvpnsetup/dev/script/menu.sh
 
 wget -O /usr/bin/user-add https://raw.githubusercontent.com/saifulaffendy21/sshvpnsetup/dev/script/user-add.sh
 
