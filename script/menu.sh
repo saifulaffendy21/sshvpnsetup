@@ -42,7 +42,7 @@ do
     echo -e "\e[0;33mOriginal Autoscript   :\e[35m  http://localhost"
     echo ""
 	echo -e "\e[0;36m------------------------------------------------------------------------\e[0;0m"
-	echo -e "\e[0;36m---------------------- Welcome To DenMy Autoscript ---------------------\e[0;0m"
+	echo -e "\e[0;36m---------------------- Welcome To saifulaffendy Autoscript ---------------------\e[0;0m"
     echo -e "\e[0;36m------------------------------------------------------------------------\e[0;0m"
 	echo -e "\e[0;35m 1)\e[0m Create new user                          (name, pass, days)"
     echo -e "\e[0;35m 2)\e[0m User renew                               (name, days extend)"
@@ -181,9 +181,9 @@ echo ""
 		clear
         echo -e "\e[0;34m----------------- VPS SETUP ---------------\e[0;0m" 
 echo -e "\e[0;33m
-VPS SETUP BY DenMy
-Tel       :+60123456789
-Telegram  :      @ggwp
+VPS SETUP BY saifulaffendy
+Tel       :+601111224670
+Telegram  : @monsterminds
 \e[0;0m"
 echo -e "\e[0;32mVps setup Panel reseller, Webmin, Openvpn 
 Rm30/ip  \e[0;0m"            
